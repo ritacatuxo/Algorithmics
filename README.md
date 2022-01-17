@@ -4,7 +4,7 @@ Repository for the Algorithmics course at the School of Computer Engineering of 
 ## Information
 **Student**: Vicente García Díaz
 
-**Year**: 2020
+**Year**: 2022
 
 **Repository URL**: https://github.com/vicegd/algorithmicsGarciaDiazVicenteUO42478
 
