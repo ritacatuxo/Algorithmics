@@ -1,15 +1,19 @@
 package session0;
 
-
+import static org.junit.Assert.assertEquals;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class MathTest {
-	Math math;
+	private static Math math;
+	private static Logger log = LoggerFactory.getLogger(MathTest.class);
 	   
     @BeforeClass
-    public void initialize() {
+    public static void initialize() {
         math = new Math();
+        log.info("Testing student project");
     }
 
 	@Test
