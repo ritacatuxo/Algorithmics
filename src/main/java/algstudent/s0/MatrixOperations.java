@@ -12,6 +12,8 @@ import java.util.Random;
  */
 public class MatrixOperations {
 	
+	// attributes
+	
 	private int[][] matrix;
 	private int size;
 	
@@ -89,8 +91,7 @@ public class MatrixOperations {
 			}
 			
         } 
-        catch( IOException e)
-        {
+        catch( IOException e) {
         	System.out.println("Error trying to read the file " + fileName);
         }
         finally
@@ -107,7 +108,7 @@ public class MatrixOperations {
 	
 	
 	/**
-	 * @return the matix size
+	 * @return the matrix size
 	 */
 	public int getSize()
 	{
@@ -133,7 +134,7 @@ public class MatrixOperations {
 	
 	/**
 	 *  Computes the summation of all the elements of the matrix diagonal.
-	 *  Iterate over all the matrix elements --> Complexity quadratic O(n^2)
+	 *  Iterate over all the matrix elements --> quadratic complexity O(n^2)
 	 */
 	public int sumDiagonal1()
 	{
@@ -179,7 +180,6 @@ public class MatrixOperations {
 	 */
 	public void travelPath(int i, int j)
 	{
-		// CREATE METHOD TO SAVE TO FILE AND END (LO DE number of movements = 32)
 		
 		
 		boolean end = false;
@@ -190,7 +190,6 @@ public class MatrixOperations {
 			matrix[i][j]= -1;
 			
 			// move in the corresponding direction
-			
 			switch(value)
 			{
 				case 1:
@@ -215,7 +214,7 @@ public class MatrixOperations {
 			}
 			
 			//check if we have to end the iteration - if it goes beyond the limits of the matrix OR
-			// an already traversed postition is reached
+			// an already traversed position is reached
 			if ( i < 0 || i >= size || j < 0 || j >= size || matrix[i][j] == -1)
 				end = true;
 		}

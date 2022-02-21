@@ -1,4 +1,6 @@
-package algstudent.s0;
+package algstudent.s11;
+
+import algstudent.s0.MatrixOperations;
 
 public class MatrixOperationsTimes 
 {
